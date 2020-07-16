@@ -3,7 +3,12 @@ package leetcode_practice;
 public class Main {
 	public static void main(String[] args) {
 		
-		Object obj = new Question63();
+		Object obj = new Question17_13();
+		
+		// 17.13恢复空格
+		String[] dictionary = new String[] {"looked","just","like","her","brother"};
+		String sentence = "jesslookedjustliketimherbrother";
+		System.out.println(((Question17_13)obj).respace(dictionary, sentence));
 		
 		//63.不同路径2
 		
