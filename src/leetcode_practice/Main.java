@@ -3,11 +3,17 @@ package leetcode_practice;
 public class Main {
 	public static void main(String[] args) {
 		
-		Object obj = new Question309();
+		Object obj = new Question97();
+		
+		//97.交错字符串
+		String s1 = "aabcc";
+		String s2 = "dbbca";
+		String s3 = "aadbbcbcac";
+		System.out.println(((Question97)obj).isInterleave(s1, s2, s3));
 		
 		//309.股票最佳买卖时机含冷冻期
-		int[] prices = new int[] {1, 2, 3, 0, 2};
-		System.out.println(((Question309)obj).maxProfit(prices));
+//		int[] prices = new int[] {1, 2, 3, 0, 2};
+//		System.out.println(((Question309)obj).maxProfit(prices));
 		
 		
 		// 17.13恢复空格
