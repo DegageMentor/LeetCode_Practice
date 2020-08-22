@@ -3,13 +3,27 @@ package leetcode_practice;
 public class Main {
 	public static void main(String[] args) {
 
-		Object obj = new Question679();
+		Object obj = new Question529();
 
+		// 529. 扫雷游戏
+		char board[][] = new char[][]{{'E','E','E','E','E'},{'E','E','M','E','E'},{'E','E','E','E','E'},{'E','E','E','E','E'}};
+		int[] click = new int[]{3, 0};
+		char[][] newBoard = ((Question529)obj).updateBoard(board, click);
+		for(int i = 0; i < newBoard.length; i++)
+		{
+			for(int j = 0; j < newBoard[i].length; j++)
+			{
+				System.out.print(newBoard[i][j] + " ");
+			}
+			System.out.println();
+		}
+			
+		
 		// 679.24点游戏
-		int[] nums1 = new int[] { 1, 3, 4, 6 };	// 6 / (1 - 3/4)
-		int[] nums2 = new int[] { 3, 8, 3, 8 };	// 8 / (3 - 8/3)
-		System.out.println(((Question679)obj).judgePoint24(nums1));
-		System.out.println(((Question679)obj).judgePoint24(nums2));
+//		int[] nums1 = new int[] { 1, 3, 4, 6 };	// 6 / (1 - 3/4)
+//		int[] nums2 = new int[] { 3, 8, 3, 8 };	// 8 / (3 - 8/3)
+//		System.out.println(((Question679)obj).judgePoint24(nums1));
+//		System.out.println(((Question679)obj).judgePoint24(nums2));
 
 		// 97.交错字符串
 //		String s1 = "aabcc";
