@@ -24,6 +24,31 @@ import java.util.*;
 	你可以按任意顺序返回答案。
  */
 public class Question347 {
+	
+//	Map<Integer, Integer> map = new HashMap<>();
+//    for (int num : nums) {
+//        map.compute(num, (key, v) -> v = v == null ? 1 : v + 1);
+//    }
+//    PriorityQueue<Integer> heap = new PriorityQueue<>(new Comparator<Integer>() {
+//        @Override
+//        public int compare(Integer o1, Integer o2) {
+//            return map.get(o1) - map.get(o2);
+//        }
+//    });
+//    for (Integer key : map.keySet()) {
+//        if (heap.size() < k) heap.add(key);
+//        else if (map.get(key) > map.get(heap.peek())) {
+//            heap.poll();
+//            heap.add(key);
+//        }
+//    }
+//    int[] ans = new int[k];
+//    for (int i = 0; i < k; i++) {
+//        ans[i] = heap.poll();
+//    }
+//    return ans;
+    
+
 	//HashMap + 堆排序
 	Map<Integer, Integer> mymap = new HashMap<>();
     public int[] topKFrequent(int[] nums, int k) {
