@@ -3,20 +3,26 @@ package leetcode_practice;
 public class Main {
 	public static void main(String[] args) {
 
-		Object obj = new Question529();
-
+		Object obj = new Question347();
+		
+		//347.前k个高频元素
+		int[] nums = new int[]{1,1,1,2,2,3};
+		int k = 2;
+		for(int n : ((Question347)obj).topKFrequent(nums, k))
+			System.out.println(n);
+		
 		// 529. 扫雷游戏
-		char board[][] = new char[][]{{'E','E','E','E','E'},{'E','E','M','E','E'},{'E','E','E','E','E'},{'E','E','E','E','E'}};
-		int[] click = new int[]{3, 0};
-		char[][] newBoard = ((Question529)obj).updateBoard(board, click);
-		for(int i = 0; i < newBoard.length; i++)
-		{
-			for(int j = 0; j < newBoard[i].length; j++)
-			{
-				System.out.print(newBoard[i][j] + " ");
-			}
-			System.out.println();
-		}
+//		char board[][] = new char[][]{{'E','E','E','E','E'},{'E','E','M','E','E'},{'E','E','E','E','E'},{'E','E','E','E','E'}};
+//		int[] click = new int[]{3, 0};
+//		char[][] newBoard = ((Question529)obj).updateBoard(board, click);
+//		for(int i = 0; i < newBoard.length; i++)
+//		{
+//			for(int j = 0; j < newBoard[i].length; j++)
+//			{
+//				System.out.print(newBoard[i][j] + " ");
+//			}
+//			System.out.println();
+//		}
 			
 		
 		// 679.24点游戏
