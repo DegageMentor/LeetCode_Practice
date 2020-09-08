@@ -1,15 +1,26 @@
 package leetcode_practice;
+import java.util.*;
 
 public class Main {
 	public static void main(String[] args) {
 
-		Object obj = new Question347();
+		Object obj = new Question77();
+		
+		int n = 4, k = 2;
+		for(List<Integer> li: (((Question77)obj).combine(n, k)))
+		{
+			for(int n1 : li)
+			{
+				System.out.print(n1 + " ");
+			}
+			System.out.println();
+		}
 		
 		//347.前k个高频元素
-		int[] nums = new int[]{1,1,1,2,2,3};
-		int k = 2;
-		for(int n : ((Question347)obj).topKFrequent(nums, k))
-			System.out.println(n);
+//		int[] nums = new int[]{1,1,1,2,2,3};
+//		int k = 2;
+//		for(int n : ((Question347)obj).topKFrequent(nums, k))
+//			System.out.println(n);
 		
 		// 529. 扫雷游戏
 //		char board[][] = new char[][]{{'E','E','E','E','E'},{'E','E','M','E','E'},{'E','E','E','E','E'},{'E','E','E','E','E'}};
