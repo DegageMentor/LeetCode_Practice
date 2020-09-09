@@ -4,10 +4,12 @@ import java.util.*;
 public class Main {
 	public static void main(String[] args) {
 
-		Object obj = new Question77();
+		Object obj = new Question39();
 		
-		int n = 4, k = 2;
-		for(List<Integer> li: (((Question77)obj).combine(n, k)))
+		//39.组合总和
+		int[] candidates = new int[] {2, 3, 6, 7};
+		int target = 7;
+		for(List<Integer> li: (((Question39)obj).combinationSum(candidates, target)))
 		{
 			for(int n1 : li)
 			{
@@ -15,6 +17,18 @@ public class Main {
 			}
 			System.out.println();
 		}
+		
+		
+		//77.组合
+//		int n = 4, k = 2;
+//		for(List<Integer> li: (((Question77)obj).combine(n, k)))
+//		{
+//			for(int n1 : li)
+//			{
+//				System.out.print(n1 + " ");
+//			}
+//			System.out.println();
+//		}
 		
 		//347.前k个高频元素
 //		int[] nums = new int[]{1,1,1,2,2,3};
