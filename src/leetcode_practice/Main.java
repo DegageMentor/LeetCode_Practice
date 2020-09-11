@@ -4,11 +4,12 @@ import java.util.*;
 public class Main {
 	public static void main(String[] args) {
 
-		Object obj = new Question216();
+		Object obj = new Question40();
 		
-		//216.组合总和-3
-		int n = 7, k = 3;
-		for(List<Integer> li: (((Question216)obj).combinationSum3(k, n)))
+		//40.组合总和
+		int[] candidates = new int[] {10,1,2,7,6,1,5};
+		int target = 8;
+		for(List<Integer> li: (((Question40)obj).combinationSum2(candidates, target)))
 		{
 			for(int n1 : li)
 			{
@@ -16,6 +17,17 @@ public class Main {
 			}
 			System.out.println();
 		}
+		
+		//216.组合总和-3
+//		int n = 7, k = 3;
+//		for(List<Integer> li: (((Question216)obj).combinationSum3(k, n)))
+//		{
+//			for(int n1 : li)
+//			{
+//				System.out.print(n1 + " ");
+//			}
+//			System.out.println();
+//		}
 		
 		
 		//39.组合总和
