@@ -1,22 +1,33 @@
 package leetcode_practice;
-import java.util.*;
+import leetcode_practice.Question637.TreeNode;
 
 public class Main {
 	public static void main(String[] args) {
 
 		Object obj = new Question40();
 		
+		
+		//637.二叉树的层平均值
+		Question637 q = new Question637();
+		TreeNode root = q.new TreeNode(3);
+		root.left = q.new TreeNode(9);
+		root.right = q.new TreeNode(20);
+		root.right.left = q.new TreeNode(15);
+		root.right.right = q.new TreeNode(7);
+		for(double d : q.averageOfLevels(root))
+			System.out.println(d);
+		
 		//40.组合总和
-		int[] candidates = new int[] {10,1,2,7,6,1,5};
-		int target = 8;
-		for(List<Integer> li: (((Question40)obj).combinationSum2(candidates, target)))
-		{
-			for(int n1 : li)
-			{
-				System.out.print(n1 + " ");
-			}
-			System.out.println();
-		}
+//		int[] candidates = new int[] {10,1,2,7,6,1,5};
+//		int target = 8;
+//		for(List<Integer> li: (((Question40)obj).combinationSum2(candidates, target)))
+//		{
+//			for(int n1 : li)
+//			{
+//				System.out.print(n1 + " ");
+//			}
+//			System.out.println();
+//		}
 		
 		//216.组合总和-3
 //		int n = 7, k = 3;
