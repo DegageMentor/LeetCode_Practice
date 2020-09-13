@@ -4,18 +4,29 @@ import leetcode_practice.Question637.TreeNode;
 public class Main {
 	public static void main(String[] args) {
 
-		Object obj = new Question40();
+		Object obj = new Question79();
+		
+		//79.单词搜索
+		char[][] board = new char[][] {{'A', 'B', 'C', 'E'}, 
+										{'S', 'F', 'C', 'S'}, 
+										{'A', 'D', 'E', 'E'}};
+		String word1 = "ABCCED";
+		String word2 = "SEE";
+		String word3 = "ABCB";
+		System.out.println((((Question79)obj).exist(board, word1)));
+		System.out.println((((Question79)obj).exist(board, word2)));
+		System.out.println((((Question79)obj).exist(board, word3)));
 		
 		
 		//637.二叉树的层平均值
-		Question637 q = new Question637();
-		TreeNode root = q.new TreeNode(3);
-		root.left = q.new TreeNode(9);
-		root.right = q.new TreeNode(20);
-		root.right.left = q.new TreeNode(15);
-		root.right.right = q.new TreeNode(7);
-		for(double d : q.averageOfLevels(root))
-			System.out.println(d);
+//		Question637 q = new Question637();
+//		TreeNode root = q.new TreeNode(3);
+//		root.left = q.new TreeNode(9);
+//		root.right = q.new TreeNode(20);
+//		root.right.left = q.new TreeNode(15);
+//		root.right.right = q.new TreeNode(7);
+//		for(double d : q.averageOfLevels(root))
+//			System.out.println(d);
 		
 		//40.组合总和
 //		int[] candidates = new int[] {10,1,2,7,6,1,5};
