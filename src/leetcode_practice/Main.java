@@ -1,21 +1,33 @@
 package leetcode_practice;
-import leetcode_practice.Question637.TreeNode;
+import leetcode_practice.Question94.TreeNode;
 
-public class Main {
+public class Main {	
+	// 用例测试
 	public static void main(String[] args) {
 
-		Object obj = new Question79();
+		Object obj = new Question94();
+		
+		//94.二叉树的中序遍历
+		Question94 q = new Question94();
+		TreeNode root = q.new TreeNode(1);
+		root.right = q.new TreeNode(2);
+		root.right.left = q.new TreeNode(3);
+		for(int i : (((Question94)obj).inorderTraversal(root)))
+		{
+			System.out.println(i);
+		}
+		
 		
 		//79.单词搜索
-		char[][] board = new char[][] {{'A', 'B', 'C', 'E'}, 
-										{'S', 'F', 'C', 'S'}, 
-										{'A', 'D', 'E', 'E'}};
-		String word1 = "ABCCED";
-		String word2 = "SEE";
-		String word3 = "ABCB";
-		System.out.println((((Question79)obj).exist(board, word1)));
-		System.out.println((((Question79)obj).exist(board, word2)));
-		System.out.println((((Question79)obj).exist(board, word3)));
+//		char[][] board = new char[][] {{'A', 'B', 'C', 'E'}, 
+//										{'S', 'F', 'C', 'S'}, 
+//										{'A', 'D', 'E', 'E'}};
+//		String word1 = "ABCCED";
+//		String word2 = "SEE";
+//		String word3 = "ABCB";
+//		System.out.println((((Question79)obj).exist(board, word1)));
+//		System.out.println((((Question79)obj).exist(board, word2)));
+//		System.out.println((((Question79)obj).exist(board, word3)));
 		
 		
 		//637.二叉树的层平均值
