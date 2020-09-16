@@ -5,17 +5,33 @@ public class Main {
 	// 用例测试
 	public static void main(String[] args) {
 
-		Object obj = new Question94();
+		Object obj = new Question37();
 		
-		//94.二叉树的中序遍历
-		Question94 q = new Question94();
-		TreeNode root = q.new TreeNode(1);
-		root.right = q.new TreeNode(2);
-		root.right.left = q.new TreeNode(3);
-		for(int i : (((Question94)obj).inorderTraversal(root)))
+		//37.解数独
+		char[][] board = new char[][] {{'5','3','.','.','7','.','.','.','.'}, {'6','.','.','1','9','5','.','.','.'}, {'.','9','8','.','.','.','.','6','.'},
+									   {'8','.','.','.','6','.','.','.','3'}, {'4','.','.','8','.','3','.','.','1'}, {'7','.','.','.','2','.','.','.','6'},
+									   {'.','6','.','.','.','.','2','8','.'}, {'.','.','.','4','1','9','.','.','5'}, {'.','.','.','.','8','.','.','7','9'}};
+		
+		((Question37)obj).solveSudoku(board);
+		for(char[] rows : board)
 		{
-			System.out.println(i);
+			for(char c : rows)
+			{
+				System.out.print(c + " ");
+			}
+			System.out.println();
 		}
+		
+
+		//94.二叉树的中序遍历
+//		Question94 q = new Question94();
+//		TreeNode root = q.new TreeNode(1);
+//		root.right = q.new TreeNode(2);
+//		root.right.left = q.new TreeNode(3);
+//		for(int i : (((Question94)obj).inorderTraversal(root)))
+//		{
+//			System.out.println(i);
+//		}
 		
 		
 		//79.单词搜索
