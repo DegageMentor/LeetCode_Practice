@@ -1,17 +1,31 @@
 package leetcode_practice;
+import java.util.*;
 import leetcode_practice.Question94.TreeNode;
 
 public class Main {	
 	// 用例测试
 	public static void main(String[] args) {
 
-		Object obj = new Question37();
+		Object obj = new Question78();
 		
 		//501.二叉搜索树中的众数
 		
 		//617.合并二叉树
 		
 		//538.把二叉搜索树转化为累加树
+		
+		//78.子集
+		int nums[] = new int[] {1, 2, 3};
+		
+		for(List<Integer> li : (((Question78)obj).subsets(nums)))
+		{
+			System.out.print("[");
+			for(int i : li)
+			{
+				System.out.print(i + " ");
+			}
+			System.out.println("]");
+		}
 		
 		//37.解数独
 //		char[][] board = new char[][] {{'5','3','.','.','7','.','.','.','.'}, {'6','.','.','1','9','5','.','.','.'}, {'.','9','8','.','.','.','.','6','.'},
