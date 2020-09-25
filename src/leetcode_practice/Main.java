@@ -8,6 +8,8 @@ public class Main {
 
 		Object obj = new Question78();
 		
+		//106.从中序和后续遍历序列构造二叉树
+		
 		//501.二叉搜索树中的众数
 		
 		//617.合并二叉树
