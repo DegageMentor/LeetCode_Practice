@@ -1,7 +1,6 @@
 package leetcode_practice;
 import java.util.*;
 
-import leetcode_practice.Question106.TreeNode;
 
 public class Question113 {
 /*
