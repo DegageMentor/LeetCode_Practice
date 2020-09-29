@@ -6,7 +6,16 @@ public class Main {
 	// 用例测试
 	public static void main(String[] args) {
 
-		Object obj = new Question78();
+		Object obj = new Question474();
+		
+		//474.一和零
+		String[] strs = new String[] {"10", "0001", "1", "0", "111001"};
+		int m = 5;
+		int n = 3;
+		System.out.println(((Question474)obj).findMaxForm(strs, m, n));
+		
+		
+		//145.二叉树后序遍历
 		
 		//117. 填充每个节点的下一个右侧节点指针 II		
 		
@@ -23,17 +32,17 @@ public class Main {
 		//538.把二叉搜索树转化为累加树
 		
 		//78.子集
-		int nums[] = new int[] {1, 2, 3};
-		
-		for(List<Integer> li : (((Question78)obj).subsets(nums)))
-		{
-			System.out.print("[");
-			for(int i : li)
-			{
-				System.out.print(i + " ");
-			}
-			System.out.println("]");
-		}
+//		int nums[] = new int[] {1, 2, 3};
+//		
+//		for(List<Integer> li : (((Question78)obj).subsets(nums)))
+//		{
+//			System.out.print("[");
+//			for(int i : li)
+//			{
+//				System.out.print(i + " ");
+//			}
+//			System.out.println("]");
+//		}
 		
 		//37.解数独
 //		char[][] board = new char[][] {{'5','3','.','.','7','.','.','.','.'}, {'6','.','.','1','9','5','.','.','.'}, {'.','9','8','.','.','.','.','6','.'},
