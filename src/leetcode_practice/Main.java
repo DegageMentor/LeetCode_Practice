@@ -6,13 +6,21 @@ public class Main {
 	// 用例测试
 	public static void main(String[] args) {
 
-		Object obj = new Question474();
+		Object obj = new Question300();
+		
+		//300.最长上升子序列
+		int nums[] = new int[] {10, 9, 2, 5, 3, 7, 101, 18};
+		int nums2[] = new int[] {4,10,4,3,8,9};
+		System.out.println(((Question300)obj).lengthOfLIS(nums));
+		System.out.println(((Question300)obj).lengthOfLIS(nums2));
+		
+		//701.二叉搜索树的插入操作
 		
 		//474.一和零
-		String[] strs = new String[] {"10", "0001", "1", "0", "111001"};
-		int m = 5;
-		int n = 3;
-		System.out.println(((Question474)obj).findMaxForm(strs, m, n));
+//		String[] strs = new String[] {"10", "0001", "1", "0", "111001"};
+//		int m = 5;
+//		int n = 3;
+//		System.out.println(((Question474)obj).findMaxForm(strs, m, n));
 		
 		
 		//145.二叉树后序遍历
