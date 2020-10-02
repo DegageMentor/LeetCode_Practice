@@ -6,13 +6,19 @@ public class Main {
 	// 用例测试
 	public static void main(String[] args) {
 
-		Object obj = new Question300();
+		Object obj = new Question_lcp17();
+		
+		//LCP19.秋叶收藏集
+		String s1 = "rrryyyrryyyrr";
+		String s2 = "ryr";
+		System.out.println(((Question_lcp17)obj).minimumOperations(s1));
+		System.out.println(((Question_lcp17)obj).minimumOperations(s2));
 		
 		//300.最长上升子序列
-		int nums[] = new int[] {10, 9, 2, 5, 3, 7, 101, 18};
-		int nums2[] = new int[] {4,10,4,3,8,9};
-		System.out.println(((Question300)obj).lengthOfLIS(nums));
-		System.out.println(((Question300)obj).lengthOfLIS(nums2));
+//		int nums[] = new int[] {10, 9, 2, 5, 3, 7, 101, 18};
+//		int nums2[] = new int[] {4,10,4,3,8,9};
+//		System.out.println(((Question300)obj).lengthOfLIS(nums));
+//		System.out.println(((Question300)obj).lengthOfLIS(nums2));
 		
 		//701.二叉搜索树的插入操作
 		
