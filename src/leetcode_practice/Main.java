@@ -6,13 +6,21 @@ public class Main {
 	// 用例测试
 	public static void main(String[] args) {
 
-		Object obj = new Question_lcp17();
+		Object obj = new Question75();
+		
+		//75.颜色分类
+		int[] nums = new int[] {2, 0, 2, 1, 1, 0};
+		((Question75)obj).sortColors(nums);
+		for(int i : nums)
+		{
+			System.out.print(i + " ");
+		}
 		
 		//LCP19.秋叶收藏集
-		String s1 = "rrryyyrryyyrr";
-		String s2 = "ryr";
-		System.out.println(((Question_lcp17)obj).minimumOperations(s1));
-		System.out.println(((Question_lcp17)obj).minimumOperations(s2));
+//		String s1 = "rrryyyrryyyrr";
+//		String s2 = "ryr";
+//		System.out.println(((Question_lcp17)obj).minimumOperations(s1));
+//		System.out.println(((Question_lcp17)obj).minimumOperations(s2));
 		
 		//300.最长上升子序列
 //		int nums[] = new int[] {10, 9, 2, 5, 3, 7, 101, 18};
