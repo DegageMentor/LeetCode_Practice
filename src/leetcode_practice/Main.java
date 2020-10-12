@@ -6,16 +6,22 @@ public class Main {
 	// 用例测试
 	public static void main(String[] args) {
 
-		Object obj = new Question75();
+		Object obj = new Question416();
+		
+		//416.分割等和子集
+		int[] nums1 = new int[] {1, 5, 11, 5};
+		int[] nums2 = new int[] {1, 5, 2, 3};
+		System.out.println(((Question416)obj).canPartition(nums1));
+		System.out.println(((Question416)obj).canPartition(nums2));
 		
 		//75.颜色分类
-		int[] nums = new int[] {2, 0, 2, 1, 1, 0};
-		((Question75)obj).sortColors(nums);
-		for(int i : nums)
-		{
-			System.out.print(i + " ");
-		}
-		
+//		int[] nums = new int[] {2, 0, 2, 1, 1, 0};
+//		((Question75)obj).sortColors(nums);
+//		for(int i : nums)
+//		{
+//			System.out.print(i + " ");
+//		}
+//		
 		//LCP19.秋叶收藏集
 //		String s1 = "rrryyyrryyyrr";
 //		String s2 = "ryr";
