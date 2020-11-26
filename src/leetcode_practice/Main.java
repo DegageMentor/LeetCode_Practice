@@ -1,18 +1,23 @@
 package leetcode_practice;
 import java.util.*;
+
 import leetcode_practice.Question94.TreeNode;
 
 public class Main {	
 	// 用例测试
 	public static void main(String[] args) {
 
-		Object obj = new Question416();
+		Object obj = new Question164();
+		
+		//164.最大间距
+		int[] nums = new int[] {3, 6, 9, 1};
+		System.out.println(((Question164)obj).maximumGap(nums));
 		
 		//416.分割等和子集
-		int[] nums1 = new int[] {1, 5, 11, 5};
-		int[] nums2 = new int[] {1, 5, 2, 3};
-		System.out.println(((Question416)obj).canPartition(nums1));
-		System.out.println(((Question416)obj).canPartition(nums2));
+//		int[] nums1 = new int[] {1, 5, 11, 5};
+//		int[] nums2 = new int[] {1, 5, 2, 3};
+//		System.out.println(((Question416)obj).canPartition(nums1));
+//		System.out.println(((Question416)obj).canPartition(nums2));
 		
 		//75.颜色分类
 //		int[] nums = new int[] {2, 0, 2, 1, 1, 0};
