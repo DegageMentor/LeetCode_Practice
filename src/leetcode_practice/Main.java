@@ -7,14 +7,18 @@ public class Main {
 	// 用例测试
 	public static void main(String[] args) {
 
-		Object obj = new Question454();
+		Object obj = new Question493();
+		
+		//493.翻转对
+		int[] nums = new int[] {1, 3, 2, 3, 1};
+		System.out.println(((Question493)obj).reversePairs(nums));
 		
 		//453.四数相加2
-		int[] A = new int[] {1, 2};
-		int[] B = new int[] {-1, -2};
-		int[] C = new int[] {-1, 2};
-		int[] D = new int[] {0, 2};
-		System.out.println(((Question454)obj).fourSumCount(A, B, C, D));
+//		int[] A = new int[] {1, 2};
+//		int[] B = new int[] {-1, -2};
+//		int[] C = new int[] {-1, 2};
+//		int[] D = new int[] {0, 2};
+//		System.out.println(((Question454)obj).fourSumCount(A, B, C, D));
 		
 		//164.最大间距
 //		int[] nums = new int[] {3, 6, 9, 1};
