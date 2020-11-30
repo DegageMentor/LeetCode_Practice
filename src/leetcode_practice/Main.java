@@ -7,11 +7,17 @@ public class Main {
 	// 用例测试
 	public static void main(String[] args) {
 
-		Object obj = new Question493();
+		Object obj = new Question767();
+		
+		//767.重构字符串
+		String s1 = "aab";
+		String s2 = "aaab";
+		System.out.println(((Question767)obj).reorganizeString(s1));
+		System.out.println(((Question767)obj).reorganizeString(s2));
 		
 		//493.翻转对
-		int[] nums = new int[] {1, 3, 2, 3, 1};
-		System.out.println(((Question493)obj).reversePairs(nums));
+//		int[] nums = new int[] {1, 3, 2, 3, 1};
+//		System.out.println(((Question493)obj).reversePairs(nums));
 		
 		//453.四数相加2
 //		int[] A = new int[] {1, 2};
