@@ -7,13 +7,21 @@ public class Main {
 	// 用例测试
 	public static void main(String[] args) {
 
-		Object obj = new Question767();
+		Object obj = new Question321();
 		
+		//321.拼接最大数
+		int k = 5;
+		int[] nums1 = new int[] {3, 4, 6, 5};
+		int[] nums2 = new int[] {9, 1, 2, 5, 8, 3};
+		for(int n : ((Question321)obj).maxNumber(nums1, nums2, k))
+			System.out.print(n + " ");
+		System.out.println();
+			
 		//767.重构字符串
-		String s1 = "aab";
-		String s2 = "aaab";
-		System.out.println(((Question767)obj).reorganizeString(s1));
-		System.out.println(((Question767)obj).reorganizeString(s2));
+//		String s1 = "aab";
+//		String s2 = "aaab";
+//		System.out.println(((Question767)obj).reorganizeString(s1));
+//		System.out.println(((Question767)obj).reorganizeString(s2));
 		
 		//493.翻转对
 //		int[] nums = new int[] {1, 3, 2, 3, 1};
