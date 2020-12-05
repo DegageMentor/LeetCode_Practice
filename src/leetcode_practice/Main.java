@@ -7,15 +7,20 @@ public class Main {
 	// 用例测试
 	public static void main(String[] args) {
 
-		Object obj = new Question204();
+		Object obj = new Question621();
+		
+		//621.任务调度器
+		char[] tasks = new char[] {'A', 'A', 'A', 'B', 'B', 'B'};
+		int n = 2;
+		System.out.println(((Question621)obj).leastInterval(tasks, n));
 		
 		
 		//204.计数质数
-		int n1 = 10, n2 = 2, n3 = 1, n4 = 5000000;
-		System.out.println(((Question204)obj).countPrimes(n1));
-		System.out.println(((Question204)obj).countPrimes(n2));
-		System.out.println(((Question204)obj).countPrimes(n3));
-		System.out.println(((Question204)obj).countPrimes(n4));
+//		int n1 = 10, n2 = 2, n3 = 1, n4 = 5000000;
+//		System.out.println(((Question204)obj).countPrimes(n1));
+//		System.out.println(((Question204)obj).countPrimes(n2));
+//		System.out.println(((Question204)obj).countPrimes(n3));
+//		System.out.println(((Question204)obj).countPrimes(n4));
 		
 		//321.拼接最大数
 //		int k = 5;
