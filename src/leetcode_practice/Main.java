@@ -7,12 +7,17 @@ public class Main {
 	// 用例测试
 	public static void main(String[] args) {
 
-		Object obj = new Question621();
+		Object obj = new Question714();
+		
+		//714.买卖股票的最佳时机含手续费
+		int[] prices = new int[] {1, 3, 2, 8, 4, 9};
+		int fee = 2;
+		System.out.println(((Question714)obj).maxProfit(prices, fee));
 		
 		//621.任务调度器
-		char[] tasks = new char[] {'A', 'A', 'A', 'B', 'B', 'B'};
-		int n = 2;
-		System.out.println(((Question621)obj).leastInterval(tasks, n));
+//		char[] tasks = new char[] {'A', 'A', 'A', 'B', 'B', 'B'};
+//		int n = 2;
+//		System.out.println(((Question621)obj).leastInterval(tasks, n));
 		
 		
 		//204.计数质数
