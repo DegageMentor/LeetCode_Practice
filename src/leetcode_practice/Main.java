@@ -7,13 +7,18 @@ public class Main {
 	// 用例测试
 	public static void main(String[] args) {
 
-		Object obj = new Question135();
+		Object obj = new Question330();
+		
+		//330.按要求补齐数组
+		int[] nums = new int[] {1, 3};
+		int n = 6;
+		System.out.println(((Question330)obj).minPatches(nums, n));
 		
 		//135.分发糖果
-		int[] ratings1 = new int[] {1, 0, 2};
-		int[] ratings2 = new int[] {1, 2, 2};
-		System.out.println(((Question135)obj).candy(ratings1));
-		System.out.println(((Question135)obj).candy(ratings2));
+//		int[] ratings1 = new int[] {1, 0, 2};
+//		int[] ratings2 = new int[] {1, 2, 2};
+//		System.out.println(((Question135)obj).candy(ratings1));
+//		System.out.println(((Question135)obj).candy(ratings2));
 		
 		//714.买卖股票的最佳时机含手续费
 //		int[] prices = new int[] {1, 3, 2, 8, 4, 9};
