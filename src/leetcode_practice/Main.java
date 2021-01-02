@@ -7,15 +7,20 @@ public class Main {
 	// 用例测试
 	public static void main(String[] args) {
 
-		Object obj = new Question44();
+		Object obj = new Question239();
+		
+		int[] nums = new int[] {1, 3, -1, -3, 5, 3, 6, 7};
+		int k = 3;
+		for(int i : (((Question239)obj).maxSlidingWindow(nums, k)))
+			System.out.print(i + " ");
 		
 		//44.通配符匹配
-		String s1 = "aa";
-		String p1 = "a";
-		String s2 = "aa";
-		String p2 = "*";
-		System.out.println(((Question44)obj).isMatch(s1, p1));
-		System.out.println(((Question44)obj).isMatch(s2, p2));
+//		String s1 = "aa";
+//		String p1 = "a";
+//		String s2 = "aa";
+//		String p2 = "*";
+//		System.out.println(((Question44)obj).isMatch(s1, p1));
+//		System.out.println(((Question44)obj).isMatch(s2, p2));
 		
 		//330.按要求补齐数组
 //		int[] nums = new int[] {1, 3};
