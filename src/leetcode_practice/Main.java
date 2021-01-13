@@ -7,12 +7,18 @@ public class Main {
 	// 用例测试
 	public static void main(String[] args) {
 
-		Object obj = new Question239();
+		Object obj = new Question684();
 		
-		int[] nums = new int[] {1, 3, -1, -3, 5, 3, 6, 7};
-		int k = 3;
-		for(int i : (((Question239)obj).maxSlidingWindow(nums, k)))
+		// 684. 冗余连接
+		int[][] edges = new int[][] {{1, 2}, {2, 3}, {1, 3}};
+		for(int i : ((Question684)obj).findRedundantConnection(edges))
 			System.out.print(i + " ");
+		
+		// 239. 滑动窗口最大值
+//		int[] nums = new int[] {1, 3, -1, -3, 5, 3, 6, 7};
+//		int k = 3;
+//		for(int i : (((Question239)obj).maxSlidingWindow(nums, k)))
+//			System.out.print(i + " ");
 		
 		//44.通配符匹配
 //		String s1 = "aa";
